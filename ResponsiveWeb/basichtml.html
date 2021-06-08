@@ -1,3 +1,13 @@
+
+<!-- Every webpage should start with Doctype-->
+<!DOCTYPE html>
+<html>
+<!-- wrap the title of the page under head-->
+<head>
+<title>Html Note page</title>
+</head>
+<!-- wrap the rest of the webpage in body-->
+<body>
 <!-- a tag - anchor tag can be used for a variety of purpose, links, redirects, etc -->
 <a href="#"><img src="https://www.bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
 <!-- p paragraph tag -->
@@ -8,9 +18,38 @@
 <!--HTML5 introduces more descriptive HTML tags. 
     These include main, header, footer, nav, video, article, section and others.-->
 <main> <!-- here almost anything can be placed --></main>
-<!-- ul - unordered lists; li - lists -->
+<!-- ul - unordered lists; ol - ordered list (main difference is it ol displays numbers) li - lists -->
+<!-- div general purpose container for other elements -->
+<div>
+<p> Unordered List </p>
 <ul>
     <li>list 1</li>
     <li>2</li>
     <li>three</li>
 </ul>
+<p> Ordered List </p>
+<ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+</ol>
+</div>
+<!-- inputs + placeholder; adding "required makes the input field a must" -->
+<!-- forms can submit data into the web-->
+<!-- can add a button inside form, to submit certain actions -->
+<!-- labels and radio buttons / when you need only single answer for multiple questions -->
+<!-- type = "checkbox" to create a checkbox of it -->
+<!-- once radio form is submitted, if value is set; then it will submit as e.g name = value ; personality=loving
+else it will be default; value = on; which is not useful -->
+<!-- having checked - default checks them -->
+<form action="https://www.freecatphotoapp.com/submit-cat-photo">
+    <label for="indoor"><input id="indoor" value="indoor" type="radio" name="indoor-outdoor" checked> Indoor</label>
+    <label for="outdoor"><input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
+    <label for="loving"><input id="loving" value="loving" type="checkbox" name="personality"> Loving</label>
+    <label for="lazy"><input id="lazy" value="lazy" type="checkbox" name="personality"> Lazy</label>
+    <label for="energetic"><input id="energetic" value="energetic" type="checkbox" name="personality"> Energetic</label><br>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
