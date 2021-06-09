@@ -1,0 +1,33 @@
+/* Three important properties control the space that surrounds each HTML element: padding, border, and margin.*/
+/* padding (vertical) controls the amount of space between elements content and its border
+   margin is similar but (horizontal) - changing this to negative makes it grow larger  */
+   /* CSS allows you to control the padding of all four individual sides of an element with the padding-top, padding-right, padding-bottom, and padding-left properties. */
+   
+.injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 10px;
+  }
+
+  .red-box {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+  }

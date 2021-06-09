@@ -2,6 +2,41 @@
 <!-- Every webpage should start with Doctype-->
 <!DOCTYPE html>
 <html>
+<!-- style block can be declared at the top-->
+<!-- fonts can be imported from the web-->
+<!-- multiple classes can be applied --> 
+<img class="class1 class2"> <!-- like this-->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<!--Three important properties control the space that surrounds each HTML element: padding, border, and margin.-->
+<style>
+    /* the below will style for the id name */
+    #cat-photo-form {
+    background-color: green;
+  }
+    .smaller-image {
+    width: 100px;
+     }
+    h2 {
+        color: blue;
+        font-family: Lobster, monospace;
+    }
+    .red-text {
+    color: red;
+    }
+    .silver-background {
+    background-color: silver;
+    }
+    p {
+    font-size: 16px;
+    font-family: monospace;
+    }
+    .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 10px /*round borders % also works */
+  }
+</style>
 <!-- wrap the title of the page under head-->
 <head>
 <title>Html Note page</title>
@@ -14,7 +49,8 @@
 <p>paragraph here</p>
 <!-- variety of headers,h1,h2.. -->
 <h1></h1>
-<h2></h2>
+<!-- adding a style, you can add colour-->
+<h2 style="color: red;">CatPhotoApp</h2>
 <!--HTML5 introduces more descriptive HTML tags. 
     These include main, header, footer, nav, video, article, section and others.-->
 <main> <!-- here almost anything can be placed --></main>
