@@ -2,7 +2,7 @@
 /* padding (vertical) controls the amount of space between elements content and its border
    margin is similar but (horizontal) - changing this to negative makes it grow larger  */
    /* CSS allows you to control the padding of all four individual sides of an element with the padding-top, padding-right, padding-bottom, and padding-left properties. */
-   
+
 .injected-text {
     margin-bottom: -25px;
     text-align: center;
@@ -24,10 +24,16 @@
     background-color: crimson;
     color: #fff;
     padding: 20px;
+    padding: 1.5em;   /* font-size for below */
   }
 
   .blue-box {
     background-color: blue;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin: 40px 20px 20px 40px;/* top right bottom left  */
     color: #fff;
-    padding: 20px;
+    padding: 40px 20px 20px 40px; /* top right bottom left  */
   }

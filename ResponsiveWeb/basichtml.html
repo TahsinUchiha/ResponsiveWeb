@@ -1,4 +1,3 @@
-
 <!-- Every webpage should start with Doctype-->
 <!DOCTYPE html>
 <html>
@@ -9,6 +8,24 @@
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <!--Three important properties control the space that surrounds each HTML element: padding, border, and margin.-->
 <style>
+    /* you can use Hex codes to mix colours!  */
+    /* Color	Hex Code
+    Dodger Blue	#1E90FF
+    Green	    #00FF00
+    Orange	    #FFA500
+    Red	        #FF0000 */
+    /* colours can also be set up like;
+    background-color: rgb(0,0,0); */
+    body {
+    background-color: black;
+    color: green;
+    font-family: monospace;
+    }
+    /* [attr=value] */
+    [type='checkbox'] {
+    margin-top: 10px;
+    margin-bottom: 15px
+    }
     /* the below will style for the id name */
     #cat-photo-form {
     background-color: green;
@@ -17,6 +34,8 @@
     width: 100px;
      }
     h2 {
+        /* justify, center, right, left */
+        text-align: justify;
         color: blue;
         font-family: Lobster, monospace;
     }
@@ -34,8 +53,20 @@
     border-color: green;
     border-width: 10px;
     border-style: solid;
-    border-radius: 10px /*round borders % also works */
-  }
+    border-radius: 10px; /*round borders % also works */
+    }
+    /* id declarations always takes priority */
+    #orange-text { 
+    color: orange;
+    }
+    /* putting !important makes this have top priority */
+    .pink-text {
+    color: pink !important;;
+    }
+    .blue-text {
+    color: blue;
+    }
+    /* second declaration always wins  */
 </style>
 <!-- wrap the title of the page under head-->
 <head>
@@ -49,8 +80,8 @@
 <p>paragraph here</p>
 <!-- variety of headers,h1,h2.. -->
 <h1></h1>
-<!-- adding a style, you can add colour-->
-<h2 style="color: red;">CatPhotoApp</h2>
+<!-- adding a style, you can add colour - this takes top priority over anything declared above-->
+<h2 style="color: red;">CatPhotoApp</h2> 
 <!--HTML5 introduces more descriptive HTML tags. 
     These include main, header, footer, nav, video, article, section and others.-->
 <main> <!-- here almost anything can be placed --></main>
