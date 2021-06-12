@@ -1,0 +1,132 @@
+<style>
+    body {
+      min-height: 150vh;
+    }
+    #navbar {
+  
+  
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      background-color: #767676;
+    }
+    nav ul {
+      margin: 0px;
+      padding: 5px 0px 5px 30px;
+    }
+    nav li {
+      display: inline;
+      margin-right: 20px;
+    }
+    a {
+      text-decoration: none;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Welcome!</h1>
+      <nav id="navbar">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p>I shift up when the #navbar is fixed to the browser window.</p>
+  </body>
+  <!-- floats -->
+  <head>
+    <style>
+      #left {
+        float: left;
+        width: 50%;
+      }
+      #right {
+        float: right;
+        width: 40%;
+      }
+      aside, section {
+        padding: 2px;
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome!</h1>
+    </header>
+    <section id="left">
+      <h2>Content</h2>
+      <p>Good stuff</p>
+    </section>
+    <aside id="right">
+      <h2>Sidebar</h2>
+      <p>Links</p>
+    </aside>
+  </body>
+
+  <style>
+    div {
+  
+      width: 60%;
+      height: 200px;
+      margin-top: 20px;
+    }
+  /** the z-index determines which position the colours will appear*/
+    .first {
+      z-index: 2;
+      background-color: red;
+      position: absolute;
+  
+    }
+    .second {
+      background-color: blue;
+      position: absolute;
+      left: 40px;
+      top: 50px;
+      z-index: 1;
+    }
+  </style>
+  
+  <div class="first"></div>
+  <div class="second"></div>
+  <!-- can center a div by setting its margin value to auto-->
+  <style>
+    div {
+      margin: auto;
+      background-color: blue;
+      height: 100px;
+      width: 100px;
+  
+    }
+  </style>
+  <div></div>
+
+  <style>
+    body {
+      background-color: #FFFFFF;
+    }
+    /*hsl - 360 colour wheel(which colour in the wheel), saturation(grey), normal colour (black white)*/
+    .green {
+      background-color: hsl(120, 100%, 50%);
+    }
+  
+    .cyan {
+      background-color: hsl(180, 100%, 50%);
+    }
+  
+    .blue {
+      background-color: #000000;
+    }
+  
+    div {
+      display: inline-block;
+      height: 100px;
+      width: 100px;
+    }
+  </style>
+  
+  <div class="green"></div>
+  <div class="cyan"></div>
+  <div class="blue"></div>
