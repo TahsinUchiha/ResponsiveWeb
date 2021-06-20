@@ -1,0 +1,131 @@
+<style>
+    .ball {
+      width: 40px;
+      height: 40px;
+      margin: 50 auto;
+      position: fixed;
+      background: linear-gradient(
+        35deg,
+        #ccffff,
+        #ffcccc
+      );
+      border-radius: 50%;
+    }
+    #ball1 {
+      left: 20%;
+    }
+    /* transform can, changes the scale, move, rotate, skew etc */
+    #ball2 {
+          transform: scale(1.5);
+      left: 65%;
+  
+    }
+  
+    div:hover {
+    transform: scale(1.1);
+    width: 70%;
+    height: 100px;
+    margin:  50px auto;
+    background: linear-gradient(
+      53deg,
+      #ccfffc,
+      #ffcccf
+    );
+  }
+  div {
+    width: 70%;
+    height: 100px;
+    margin:  50px auto;
+  }
+  #top {
+    background-color: red;
+  }
+  #bottom {
+    transform: skewX(24deg);
+    background-color: blue;
+
+  }
+
+  .center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 25px 10px 0px 0px blue;
+  }
+
+  .center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 0px;
+    box-shadow: 25px 10px 10px 10px green;
+  }
+
+  div {
+    width: 70%;
+    height: 100px;
+    margin: 50px auto;
+  }
+  #top {
+    transform: skewY(-10deg);
+    background-color: red;
+
+  }
+  #bottom {
+    background-color: blue;
+    transform: skewX(24deg);
+  }
+
+  .heart {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+    transform: rotate(-45deg);
+  }
+  .heart::after {
+    background-color: pink;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 25px;
+  }
+  .heart::before {
+    content: "";
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0px;
+  }
+</style>
+
+<div id="top"></div>
+<div id="bottom"></div>
+  </style>
+  
+  <div class="ball" id= "ball1"></div>
+  <div class="ball" id= "ball2"></div>
