@@ -37,3 +37,23 @@
     color: #fff;
     padding: 40px 20px 20px 40px; /* top right bottom left  */
   }
+
+  div{
+    border-radius: 20px;
+    width: 70%;
+    height: 400px;
+    margin:  50 auto;
+    /* repeats gradient from some colour to some colour*/
+    background: repeating-linear-gradient(
+      45deg,
+      yellow 0px,
+      yellow 40px,
+      black 40px,
+      black 80px
+    );
+  }
+  /*background can also be set via url image*/
+  body {
+    background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
+  }
+
