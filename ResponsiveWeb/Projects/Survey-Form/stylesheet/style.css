@@ -1,7 +1,36 @@
 body {
-    background-color:rgb(3, 3, 3);
-    color: wheat !important;
+    background-color:rgb(141, 138, 138);
+    color: rgb(241, 241, 241) !important;
     text-align: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+#main {
+    background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/for_press_release.jpg);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size:cover;
+    width: 100%;
+    height: auto;  
+}
+
+#survey-form {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+
+p,
+h1 {
+  margin: 10px;
+  padding: 0px;
+}
+
+/* p {
+    padding: 10.5em;
+} */
 

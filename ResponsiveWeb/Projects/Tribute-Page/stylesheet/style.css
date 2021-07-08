@@ -3,6 +3,7 @@ body {
     color: wheat !important;
     text-align: center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
 }
 
 ul {
@@ -10,6 +11,12 @@ ul {
     text-align: left;
 }
 
+#search-button {
+    background-color:rgb(239, 246, 146);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    transition: width 0.4s ease-in-out;
+}
 
 img {
     border-radius: 75% 75% 75% 75%;
