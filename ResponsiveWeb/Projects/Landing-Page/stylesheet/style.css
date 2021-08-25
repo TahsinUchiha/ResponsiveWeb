@@ -1,15 +1,21 @@
 html {
     scroll-behavior: smooth;
 }
+#mineral-image {
+    width: 60%;
+    max-width: 500px;
+    height: auto;
+
+}
 
 body {
-    background-color:rgb(141, 138, 138);
-    color: rgb(241, 241, 241) !important;
+    background-color:rgb(255, 250, 250);
+    color: rgb(46, 43, 43) !important;
     text-align: center;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #main {
-    background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/for_press_release.jpg);
+    /* background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/for_press_release.jpg); */
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment:fixed;
