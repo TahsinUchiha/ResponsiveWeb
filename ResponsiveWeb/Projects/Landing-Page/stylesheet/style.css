@@ -8,9 +8,14 @@ html {
     height: auto;
 }
 
+#header-div {
+    position: fixed;
+}
+
 #nav-bar {
     display: flex;
-    margin-left: auto;
+    /* margin-left: auto; */
+    /* position: fixed; */
 }
 
 #nav-list a {
@@ -21,6 +26,7 @@ html {
     text-align: center;
     padding: 1px 5px;
     font-size: 20px;
+    
 }
 
 #nav-list a:hover {
@@ -32,13 +38,14 @@ html {
     border-radius: 10px;
     border-right: 1px solid rgb(255, 255, 255);;
     background-color: rgb(245, 245, 245);
-    height: 45px;
+    height: 30px;
     font-size: 20px;
     font-family: 'Bauhaus Modern', sans-serif;
     color: rgb(33, 33, 126);
     font-weight: 900;
     display: flex;
     align-items: center;
+    /* position: fixed; */
 }
 
 #header-img {
@@ -108,14 +115,15 @@ body {
 
 form {
     width: 100%;
-    max-width: 500px;
+    max-width: 150px;
     height: auto;
+    display: inline-block;
     /* spacing between each label*/
-    padding: 15px;
+    /* padding: 15px;
     border-radius: 25px;
     background: rgb(3, 3, 3, .5);
-    display: inline-block;
-    box-shadow: 0 0 8px #71d1e9; 
+ 
+    box-shadow: 0 0 8px #71d1e9;  */
 }
 .flight-experience {
     text-align: left;
