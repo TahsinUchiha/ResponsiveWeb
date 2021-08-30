@@ -9,13 +9,24 @@ html {
 }
 
 #header-div {
-    position: fixed;
+  display: flex;
+  position: fixed;
+  background-color: rgb(245, 245, 245);
+  border-radius: 10px;
+  border-right: 1px solid rgb(255, 255, 255);
+  height: 30px;
+  color: rgb(33, 33, 126);
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 #nav-bar {
-    display: flex;
-    /* margin-left: auto; */
-    /* position: fixed; */
+    font-size: 20px;
+    font-family: 'Bauhaus Modern', sans-serif;
+    float: left;
+    position: absolute;
+    right: 0;
 }
 
 #nav-list a {
@@ -26,7 +37,6 @@ html {
     text-align: center;
     padding: 1px 5px;
     font-size: 20px;
-    
 }
 
 #nav-list a:hover {
@@ -35,17 +45,9 @@ html {
 }
 
 #header {
-    border-radius: 10px;
-    border-right: 1px solid rgb(255, 255, 255);;
-    background-color: rgb(245, 245, 245);
-    height: 30px;
-    font-size: 20px;
-    font-family: 'Bauhaus Modern', sans-serif;
-    color: rgb(33, 33, 126);
     font-weight: 900;
     display: flex;
     align-items: center;
-    /* position: fixed; */
 }
 
 #header-img {
@@ -90,8 +92,11 @@ body {
 }
 
 #title {
-    margin: 1px 1px 1px 1px;
-    padding: 10px 0px 0px 0px;
+    display: flex;
+    position: relative;
+    top: 100px;
+    margin: 11px 11px 11px 11px;
+    padding: 10px 5px 10px 10px;
 }
 
 /* #submit:hover {
