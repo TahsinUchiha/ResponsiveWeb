@@ -75,20 +75,33 @@ price starts at 1kg block fixed price
               <td class="table-img"><img style="display:block;" width="150px" height="auto" src="https://upload.wikimedia.org/wikipedia/commons/5/57/Nickel_chunk.jpg"></td>
             </tr>
             <tr>
-              <td>Cobalt (Co)</td>
-              <td>£4038</td>
-              <td class="table-img"><img style="display:block;" width="150px" height="auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Kobalt_electrolytic_and_1cm3_cube.jpg/1200px-Kobalt_electrolytic_and_1cm3_cube.jpg"></td>
+              <td id="table-bottom-non-img">Cobalt (Co)</td>
+              <td id="table-bottom-non-img">£4038</td>
+              <td id= "table-bottom" class="table-img"><img style="display:block;" width="150px" height="auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Kobalt_electrolytic_and_1cm3_cube.jpg/1200px-Kobalt_electrolytic_and_1cm3_cube.jpg"></td>
             </tr>
         </table>
     </div>
-    <div name="pricing-page">
+
+    <div id="pricing-page" name="pricing-page">
         <a name="pricing" id="pricing"></a> 
-        <!-- <script src="app.js">
-        <form onsubmit="priceOfMetal(${},${input})"></form>
-      </script> -->
-        <!-- Drop down menu with calculations on metal prices, 
-        will be a small -->
-        <!-- <img id="mineral-image" src="https://www.universetoday.com/wp-content/uploads/2009/08/PGMs.png" > -->
+        <form  id= "price-calc">
+            <label for="metals">Choose a Metal:</label>
+            <select id="metal-option" name="metals">
+              <option value="IRON">IRON</option>
+              <option value="COBALT">COBALT</option>
+              <option value="RUTHENIUM">RUTHENIUM</option>
+              <option value="PALLADIUM">PALLADIUM</option>
+              <option value="OSMIUM">OSMIUM</option>
+              <option value="IRIDIUM">IRIDIUM</option>
+              <option value="PLATINUM">PLATINUM</option>
+            </select>
+            <br>
+            <label for="metals">Weight:</label>
+            <input id="metal-weight" type="number" placeholder="(kg)">
+            <input type="submit" onclick="">
+            <p id="metal-price"> <script src="app.js">
+            </script></p>
+          </form>
     </div>
     <div name="deliveries-page">
         <a name="deliveries" id="deliveries"></a> 

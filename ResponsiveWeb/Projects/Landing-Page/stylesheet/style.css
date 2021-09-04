@@ -124,7 +124,7 @@ th{
 }
 
 td,th {
-    border: 5px solid rgb(49, 0, 184);
+    border: 5px solid #3b4161;
     text-align: left;
     padding: 8px;
     
@@ -133,6 +133,40 @@ td,th {
 .table-img {
     display: block;
     max-width: fit-content;
+}
+#table-bottom-non-img{
+    padding-top: 46.25px;
+    padding-bottom: 45.25px;
+    position: relative;
+
+}
+#table-bottom {
+    padding-bottom: 1px;
+    position: absolute;
+
+
+    /* border: 11px solid */
+}
+#pricing-page{
+    background-color: #3b4161;
+    color: white;
+    padding: 12px 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+    cursor: pointer;
+    max-width: 400px;
+    width: 50%;
+}
+
+#metal-price{
+    background-color: white;
+    color: rgb(23, 39, 7);
+    display: block;
+    border: ivory;
 }
 
 

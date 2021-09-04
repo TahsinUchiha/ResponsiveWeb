@@ -12,7 +12,9 @@ const metalDictionary = {
 
 }
 
-const priceOfMetal = (metal, weight) => {
+const priceOfMetal = (metal, ) => {
+    var metal=document.getElementById(metal-option).value;
+	var weight=document.getElementById(metal-weight).value;
     return Math.round((metalDictionary[metal] * weight)*1000)/1000;
 }
 
