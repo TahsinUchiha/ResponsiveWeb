@@ -1,16 +1,46 @@
-@import url('http://fonts.cdnfonts.com/css/bauhaus-modern');
+@import url('https://fonts.cdnfonts.com/css/bauhaus-modern');
 html {
     scroll-behavior: smooth;
 
 }
+
 body {
-    /* background-image: url('https://wallpaperaccess.com/full/136632.jpg'); */
+    background-image: url('https://coolbackgrounds.io/images/backgrounds/white/white-triangle-369b8d2d.jpg');
+    background-repeat: repeat;
     background-color:rgb(255, 250, 250);
     color: rgb(29, 26, 26) !important;
     text-align: center;
     position: relative;
-    font-family: 'Bauhaus Modern', sans-serif;
+    font-family: 'Bauhaus Modern', sans-serif; 
     
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(138, 69, 202);
+  font-weight: 900;
+  /* max-width: 900px; */
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        /* background-repeat: no-repeat; */
+        background-image: url("https://images.hdqwalls.com/wallpapers/white-cube-pattern-4k-bu.jpg");
+        /* background-color: rgb(245, 245, 245); */
+    }
+
+    .allButFooter {
+        padding-bottom: 2.5rem;  
+    }
+
+    footer{
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;     
+    }
+
 }
 
 #header-div {
@@ -24,7 +54,6 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  /* margin-top: 10px; */
   padding-top: 7px;
   padding-bottom: 7px;
   
@@ -118,7 +147,7 @@ table {
 }
 
 th{
-    background-color: rgb(132, 140, 207);
+    background-color: rgb(132, 140, 207) !important;
     color: rgb(244, 240, 255);
     font-weight: bold;
 }
@@ -127,26 +156,10 @@ td,th {
     border: 5px solid #3b4161;
     text-align: left;
     padding: 8px;
+    background-color: white;
     
 }
 
-.table-img {
-    display: block;
-    max-width: fit-content;
-}
-#table-bottom-non-img{
-    padding-top: 46.25px;
-    padding-bottom: 45.25px;
-    position: relative;
-
-}
-#table-bottom {
-    padding-bottom: 1px;
-    position: absolute;
-
-
-    /* border: 11px solid */
-}
 #pricing-page{
     background-color: #3b4161;
     color: white;
@@ -155,9 +168,7 @@ td,th {
     margin-left: auto;
     margin-right: auto;
     margin-top: 5px;
-    /* border: 1px solid #ccc; */
     border-radius: 4px;
-    cursor: pointer;
     max-width: 400px;
     width: 50%;
 }
@@ -168,10 +179,47 @@ td,th {
     display: block;
     border: ivory;
 }
+#metal-option{
+    font-family: 'Bauhaus Modern', sans-serif;
+    color: white;
+    background-color: rgb(94, 65, 149);
+}
 
+#metal-weight {
+    font-family: 'Bauhaus Modern', sans-serif;
+    background-color: rgb(214, 214, 214);
+    color: rgb(94, 65, 149);
+}
+#price-output{
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
 
+#price-submit{
+    color:white;
+    background-color: rgb(94, 65, 149);
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 1px 5px;
+    font-size: 16px;
+    font-family: 'Bauhaus Modern', sans-serif;
+}
 
+#price-submit:hover {
+    background-color: rgb(98, 37, 177);
+    color: lightcoral;
+}
 
+/*Deliveries CSS */
+
+#rocket-gif{
+    max-width: 450px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+}
 
 
 

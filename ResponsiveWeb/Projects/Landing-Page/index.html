@@ -3,32 +3,8 @@
 <html> 
 <head>
 <link rel="stylesheet" href="stylesheet/style.css">
+<script src="app.js"></script>
 </head>
-<!-- 
-RAW METALS:
-iron
-Nickel
-Cobalt
-Ruthenium
-Platinum
-Iridium
-Osmium
-Palladium
-
-GAS TANKS
-non-seperated - CO2, HYDROGEN, OXYGEN, NITROGEN - NATURAL GAS
-SEPERATED 
-
-non-metals
-- CARBON 
-
->I'll have a table with price, image, a tag of the product 
->pricing page will be split into 3 categories pure, mixed, refined - which will be subject to calculations 
-price starts at 1kg block fixed price
-> pure -> *1.85 starting price, 
-  mixed -> *1.3
-  refined -> *1.65
--->
 <body id="main">
     <div id="header-div">
     <header id="header"> 
@@ -36,17 +12,19 @@ price starts at 1kg block fixed price
         <h4 id="header-title">Metastroids Minerals</h4>
         <nav id="nav-bar">
             <div id="nav-list">
-                <a class="nav-link" href="index.html#browse"> Browse</a>
-                <a class="nav-link" href="index.html#pricing"> Pricing</a>
-                <a class="nav-link" href="index.html#deliveries"> Deliveries</a>
+                <a class="nav-link" href="#browse"> Browse</a>
+                <a class="nav-link" href="#pricing"> Pricing</a>
+                <a class="nav-link" href="#deliveries"> Deliveries</a>
+                <!-- <a class="nav-link" href="deliveries.html"> Deliveries</a> -->
             </div>
         </nav> 
     </header> 
     </div>
     <h1 id="title">Finest Mineral Shop in the Galaxy</h1>
     <h6 id="description"> We sell our minerals in varying quality, pure*, mixed, refined </h6>
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input type="email" placeholder="Enter your mail">
+    <form id="form" 
+    action="https://www.freecodecamp.com/email-submit">
+        <input id="email" type="email" placeholder="Enter your mail" name="email" required>
         <input id="submit" type="submit" value="Sign up">
     </form>
     <div>
@@ -57,7 +35,7 @@ price starts at 1kg block fixed price
         <a name="browse" id="browse"></a> 
         <a href="index.html#pricing"><img id="mineral-image" src="https://www.universetoday.com/wp-content/uploads/2009/08/PGMs.png" ></a>
         <h2> How we extract our minerals</h2>
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/erF17yO9VsE"></iframe>
+        <iframe id="video" width="420" height="315" src="https://www.youtube.com/embed/erF17yO9VsE"></iframe>
         <table>
             <tr>
               <th>Metal (element)</th>
@@ -84,7 +62,9 @@ price starts at 1kg block fixed price
 
     <div id="pricing-page" name="pricing-page">
         <a name="pricing" id="pricing"></a> 
-        <form  id= "price-calc">
+        <form  id= "price-calc"
+         onsubmit=" execute();
+         return false;">
             <label for="metals">Choose a Metal:</label>
             <select id="metal-option" name="metals">
               <option value="IRON">IRON</option>
@@ -98,15 +78,17 @@ price starts at 1kg block fixed price
             <br>
             <label for="metals">Weight:</label>
             <input id="metal-weight" type="number" placeholder="(kg)">
-            <input type="submit" onclick="">
-            <p id="metal-price"> <script src="app.js">
-            </script></p>
+            <input id="price-submit" type="submit">
+            <br>
+            <p id="price-output"> Your price here <p>
           </form>
     </div>
-    <div name="deliveries-page">
+    <div class="allButFooter" name="deliveries-page">
         <a name="deliveries" id="deliveries"></a> 
         <!-- <img id="mineral-image" src="https://www.universetoday.com/wp-content/uploads/2009/08/PGMs.png" > -->
     </div>
-
+    <footer id="footer">
+        <p> CopyRight © 2021 <br> Metastroids Minerals</p>
+    </footer>
 </body>
 </html>
