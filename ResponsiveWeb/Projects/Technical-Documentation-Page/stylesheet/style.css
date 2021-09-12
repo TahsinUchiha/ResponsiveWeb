@@ -16,6 +16,7 @@ body {
     
 }
 
+
 #title{
     width: 50px;
     top: 0;
@@ -37,6 +38,7 @@ body {
     padding-left: 5px;
     display:block;
     margin-left: -8px;
+    font-size: 11px;
     
 }
 
@@ -68,7 +70,19 @@ body {
     overflow: auto;
 }
 
-@media screen and (max-width: 450px) {
+#nav-list a {
+    font-size: 15px;
+    display: block;
+    width: 300px;
+    margin:1px;
+    background-color: #858686;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    text-decoration-line: none;
+    
+  }
+
+  @media screen and (max-width: 450px) {
 
     #main-doc{
         background-color: white;
@@ -76,8 +90,6 @@ body {
         border: 2px solid black;
         margin-top: 2px;
         margin-left: -320px;
-        /* display:grid;    */
-        /* align-self:auto; */
      }
 
     #nav-list {
@@ -94,27 +106,18 @@ body {
         flex-direction: column;
     }
     #nav-list a {
-        font-size:20px;
+        font-size: 15px;
         margin:1px;
         background-color: #858686;
         color: rgb(0, 0, 0);
         border: 2px solid black;
+        width:96%;
+        padding-right: 3px;
+        padding-left: 3px;
+        flex:auto;
       }
    
 }
-
-
-#nav-list a {
-    font-size:20px;
-    display: block;
-    width: 300px;
-    margin:1px;
-    background-color: #858686;
-    color: rgb(0, 0, 0);
-    border: 2px solid black;
-    text-decoration-line: none;
-    
-  }
 
 
   #nav-list a:hover {
@@ -125,6 +128,7 @@ body {
   code {
       border: 2px solid black;
       padding: 3px;
+      background-color: rgb(235, 235, 235);
   }
 
 
