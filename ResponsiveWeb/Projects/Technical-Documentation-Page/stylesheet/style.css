@@ -34,8 +34,9 @@ body {
     background-color: white;
     box-shadow: 0 0 5px 5px rgb(155, 153, 153) ;
     border: 2px solid black;
-    padding-left: 10px;
+    padding-left: 5px;
     display:block;
+    margin-left: -8px;
     
 }
 
@@ -80,6 +81,7 @@ body {
         overflow: auto;
         position:relative;
         margin-left: -320px;
+        padding-right: 316px;
     }
     #nav-list a {
         font-size:20px;
@@ -89,17 +91,15 @@ body {
         background-color: #858686;
         color: rgb(0, 0, 0);
         border: 2px solid black;
-        
+        padding-right: 80px;
       }
       #main-doc{
         background-color: white;
         box-shadow: 0 0 5px 5px rgb(155, 153, 153) ;
         border: 2px solid black;
-        /* padding-left: 10px; */
-        margin-top: 200px;
+        margin-top: 2px;
         margin-left: -320px;
         display:block;
-        
     }
 }
 
@@ -112,6 +112,7 @@ body {
     background-color: #858686;
     color: rgb(0, 0, 0);
     border: 2px solid black;
+    text-decoration-line: none;
     
   }
 
@@ -119,6 +120,11 @@ body {
   #nav-list a:hover {
     background-color: white;
     box-shadow: 0 0 5px 5px rgb(49, 49, 49);
+  }
+
+  code {
+      border: 2px solid black;
+      padding: 3px;
   }
 
 
