@@ -4,6 +4,10 @@
 <head>
 <link rel="stylesheet" href="stylesheet/style.css">
 <script src="app.js"></script>
+<link rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/default.min.css">
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
 </head>
 <body id="main">
   <nav id="nav-bar">
@@ -17,6 +21,7 @@
         <a class="nav-link" href="#Hello_World"> Hello World</a>
         <a class="nav-link" href="#Variables"> Variables</a>
         <a class="nav-link" href="#Variable_Scope"> Variable Scope</a>
+        <a class="nav-link" href="#Data_types"> Data types</a>
     </div>
   </header>
 </nav> 
@@ -54,9 +59,9 @@
       <p>
         For example,
       </p>
-      <code>import org.company.Menu </code>
+      <code id="small">import org.company.Menu </code>
       <p>This import statement makes the Menu class available to use in our current class, such that the Menu can be instantiated.</p>
-    <code>Menu menu = new Menu() </code>
+    <code id="small">Menu menu = new Menu() </code>
     <p>By importing, and specifying the full package, the JVM will know where to find Menu class, and be used in our code.</p>
     </section>
     <section class="main-section" id="What_you_should_already_know">
@@ -76,13 +81,11 @@
       <header>
         <h1>Java vs Javascript</h1>
       </header>
-      <p></p>
-      <p></p>
-      <ul>
-        <li></li>
-        <li></li>
-      </ul>
-      <code></code>
+      <p>Though they share similar name, syntactically and someways sometimes similar, fundamentally they are very different. 
+        JS(java script) resembles Java but does not have Java's static typing and strong type checking.
+        JS follows Java's expression syntax, naming conventions and basic control-flow constructs which was the reason it was actually renamed from LiveScript to JavaScript. 
+      </p>
+      <p>Java is not as free-form language as JS. In Java you must declare all variables, classes and methods. Methods also need to be declared either public, private or protected. Interfaces can also sometimes be implemented and often recommended. Variables, parameters and functions also need a return type explictly unlike in JS.</p>
     </section>
     <section class="main-section" id="Basic_OOP_Principles">
       <header>
@@ -108,15 +111,53 @@
       <header>
       <h1>Hello World</h1>
       </header>
+      <p>Due to the portability of Java, if you have JVM installed on one machine it can be run on another machine. 
+        To write the most basic code, to know we have Java working in our machines. 
+We will print out on console, <b>hello world</b>
+      </p>
       <p></p>
-      <p></p>
-      <code></code>
+<pre class="language-java"><code>
+//Basic java hello world program to print "hello world"
+//import modules/libraries required
+  import java.io*
+   
+  // set up class 
+  class HelloWorld {
+  public static void main(String[] args) {
+    
+    // prints Hello World
+    System.out.println("Hello World");
+  }
+    
+}
+</pre></code>
+<p> Let's break down what's happening, </p>
+<ul>
+  <li>
+    <b>Comments</b> - first few lines are known as comments and used to explain the code, for this example we have commented for every new line, but for general practice, you don't need to comment for every single line. Good practice would be to comment at the start explaining what the code does, and comment the functionalities of any methods
+  </li>
+  <li>
+    <b>Import</b> - second line imports from java.io*, this is essentially importing all classes of the io package. This io package provides a set of input and output streams for reading/writing data files. We import classes to provide us with methods/functionalities to use within our code
+  </li>
+  <li> <b>Class</b> - The class contains the data and methods to be used in the program. Methods define the behaviour of a program, in this example we only have one method called <b>main</b>, which is <b>void</b>, meaning it does not request anything to be returned</li>
+  <li> Within the main method, <code style="color: rgb(138, 138, 138);">System.out.println("Hello World")</code>, this calls the method println() from the standard output stream which prints whatever is within the method onto console. </li>
+</ul>
     </section>
     <section class="main-section" id="Variables">
       <header>
       <h1>Variables</h1>
       </header>
-      <p></p>
+      <p>In your application, variables are symbolic names for values and are essentially containers for storing data values</p>
+      <ul>
+        <p>Example we have:</p>
+        <li>
+          <b>String</b> - stores text, such as "Hello World", and are usually surrounded by double quotes.
+        </li>
+        <li>
+          <b>int</b> - stores integers, such as <code style="color: rgb(219, 31, 31);">12</code>
+        </li>
+        <li><b>boolean</b> - stores either two states, <code  style="color: rgb(8, 245, 87);" >true</code> or <code  style="color: rgb(219, 31, 31);">false</code></li>
+      </ul>
       <p></p>
     </section>
     <section class="main-section" id="Declaring_variables">
@@ -131,9 +172,23 @@
       <header>
       <h1>Variable Scope</h1>
       </header>
-      <p></p>
+      <p>In Java, when we declare a variable, it must be </p>
       <p></p>
       <code></code>
+    </section>
+    <section class="main-section" id="Data_types">
+      <header>
+      <h1>Data Types</h1>
+      </header>
+      <p>In Standard Java there are 8 primitive data types <b>byte, short, int, long, float, double, boolean</b> and <b>char</b> </p>
+      <p>Some examples below</p>
+      <pre class="language-java"><code>
+int someNum = 10; // Integers - numbers that can only be whole number
+double someDouble = 4.22; // Double - numbers that can be represented as decimal
+char someLetter = 'A'; // Char - representing a letter
+boolean someBool = true; // Boolean - representing either true or false
+String someText = "Hello World"; // String - representing a chain of chars
+      </code></pre>
     </section>
   </main>
     <!-- <h1 id="title">Finest Mineral Shop in the Galaxy</h1>
