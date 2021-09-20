@@ -59,6 +59,10 @@ body {
   
 }
 
+#navbar {
+    position: fixed;
+}
+
 #nav-list {
     align-items: center;
     position: fixed;
@@ -84,6 +88,10 @@ body {
   }
 
   @media screen and (max-width: 450px) {
+
+    #navbar {
+        position: relative;
+    }
 
     #main-doc{
         background-color: white;

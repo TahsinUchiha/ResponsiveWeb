@@ -10,18 +10,18 @@
 <script>hljs.highlightAll();</script>
 </head>
 <body id="main">
-  <nav id="nav-bar">
+  <nav id="navbar">
     <header>
     <div id="nav-list">
       <h1 id="title">Java Documentation</h1>
-        <a class="nav-link" id="nav-intro" href="#Introduction"> Intro</a>
+        <a class="nav-link" id="nav-intro" href="#Introduction"> Introduction</a>
         <a class="nav-link" href="#What_you_should_already_know"> What you should already know</a>
         <a class="nav-link" href="#Java_vs_Javascript"> Java vs Javascript</a>
         <a class="nav-link" href="#Basic_OOP_Principles"> Basic OOP Principles</a>
         <a class="nav-link" href="#Hello_World"> Hello World</a>
         <a class="nav-link" href="#Variables"> Variables</a>
-        <a class="nav-link" href="#Variable_Scope"> Variable Scope</a>
         <a class="nav-link" href="#Data_types"> Data types</a>
+        <a class="nav-link" href="#Variable_Scope"> Variable Scope</a>
     </div>
   </header>
 </nav> 
@@ -160,34 +160,55 @@ We will print out on console, <b>hello world</b>
       </ul>
       <p></p>
     </section>
-    <section class="main-section" id="Declaring_variables">
-      <header>
-      <h1>Declaring variables</h1>
-      </header>
-      <p></p>
-      <p></p>
-      <code></code>
-    </section>
-    <section class="main-section" id="Variable_Scope">
-      <header>
-      <h1>Variable Scope</h1>
-      </header>
-      <p>In Java, when we declare a variable, it must be </p>
-      <p></p>
-      <code></code>
-    </section>
     <section class="main-section" id="Data_types">
       <header>
       <h1>Data Types</h1>
       </header>
       <p>In Standard Java there are 8 primitive data types <b>byte, short, int, long, float, double, boolean</b> and <b>char</b> </p>
-      <p>Some examples below</p>
+      <p>In Java, when we declare a variable, we must specify the valid data type before giving it a value</p>
+      <p>Some examples below on data types and how to declare:</p>
       <pre class="language-java"><code>
 int someNum = 10; // Integers - numbers that can only be whole number
 double someDouble = 4.22; // Double - numbers that can be represented as decimal
 char someLetter = 'A'; // Char - representing a letter
 boolean someBool = true; // Boolean - representing either true or false
 String someText = "Hello World"; // String - representing a chain of chars
+      </code></pre>
+    </section>
+    <section class="main-section" id="Variable_Scope">
+      <header>
+      <h1>Variable Scope</h1>
+      </header>
+      <p>Scopes are the region where a certain variable is accessible within a region of the program.
+        Depending on the location they are created, that variable is only accessible by a function or method after it has been declared. 
+      </p>
+      <p>In Java we have <b>local scope</b>, sometimes known as a method level scope where a variable is declared within a method or function and the variable is NOT accessible outside this method. A <b>global scope</b> or sometimes known as Class level scope, are variables declared within a class usually at the very top of the code execution block and is accessible to all methods within that class - depending on whether it is public or private it can even be accessed outside the class. A <b>Block scope</b> are sometimes declared in <code>for</code> loop condition and is not accessible after the loop is complete; unless defined seperately beforehand. </p>
+      <p>Example of <b>Global Scope</b>:</p>
+      <pre class="language-java"><code>
+public class Animal {
+  private int legs;
+  public String type;
+
+  public Animal(int legs, String type) {
+    // Variable legs and type accessible here
+  }
+  
+  public void fly(String type) {
+    // Variable legs and type accessible here
+  }
+
+}
+
+public class whatAnimal{
+  public static void main(String[] args) {
+  Animal animalObj = new Animal(2, "Bird");
+  // Can access the public variable type 
+  String animalType = animalObj.type;
+  
+  // Can't access the private variable legs in this class
+  // int animalLegs = animalObj.legs -- would result in an error
+  }
+}
       </code></pre>
     </section>
   </main>
