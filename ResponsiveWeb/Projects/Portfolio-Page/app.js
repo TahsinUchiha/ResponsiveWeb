@@ -14,7 +14,6 @@ const metalDictionary = {
 
 const priceOfMetal = (metal, weight) => {
     return Math.round((metalDictionary[metal] * weight)*1000)/1000;
-    // alert(Math.round((metalDictionary[metal] * weight)*1000)/1000);
 }
 
 
@@ -24,8 +23,6 @@ const priceOfMetal = (metal, weight) => {
 function execute() {
 let metal = document.querySelector('#metal-option').value
 let weight = document.querySelector('#metal-weight').value
-    // alert("hello body");
     document.getElementById("price-output").innerHTML = "£" + priceOfMetal(metal,weight);
-    // alert(priceOfMetal(metal,weight));
 
 }

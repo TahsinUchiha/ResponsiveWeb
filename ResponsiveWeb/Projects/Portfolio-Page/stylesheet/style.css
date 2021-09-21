@@ -1,8 +1,12 @@
 @import url('https://fonts.cdnfonts.com/css/bauhaus-modern');
+@import url('https://fonts.googleapis.com/css?family=Chilanka');
 html {
     scroll-behavior: smooth;
 
 }
+
+::-moz-selection { background: rgb(255, 187, 0); }
+::selection { background: rgb(255, 187, 0); }
 
 body {
     background-image: url('https://coolbackgrounds.io/images/backgrounds/white/white-triangle-369b8d2d.jpg');
@@ -11,7 +15,7 @@ body {
     color: rgb(29, 26, 26) !important;
     text-align: center;
     position: relative;
-    font-family: 'Bauhaus Modern', sans-serif; 
+    font-family: 'Chilanka', sans-serif; 
     
 }
 
@@ -52,13 +56,20 @@ footer {
   border-radius: 10px;
   border-right: 1px solid rgb(255, 255, 255);
   height: 30px;
-  color: rgb(33, 33, 126);
+  color: rgb(97, 8, 8);
   top: 0;
   left: 0;
   right: 0;
+  padding-left: 1px;
+  padding-right: 1px;
   padding-top: 7px;
   padding-bottom: 7px;
+  box-shadow: 10px 5px 5px rgb(66, 66, 66);
   
+}
+
+h4 {
+    padding-left: 5px;
 }
 
 
@@ -73,18 +84,19 @@ footer {
     align-items: center;
 }
 
-#nav-bar {
+#navbar {
     font-size: 20px;
-    font-family: 'Bauhaus Modern', sans-serif;
+    /* font-family: 'Bauhaus Modern', sans-serif; */
     float: left;
-    position: absolute;
+    position: fixed;
     right: 0;
 }
 
 #nav-list a {
+    
     text-decoration:none;
-    color: rgb(13, 0, 134);
-    background-color:rgb(177, 205, 236);
+    color: rgb(54, 1, 1);
+    background-color:rgb(236, 196, 177);
     border-radius: 5px;
     text-align: center;
     padding: 1px 5px;
@@ -92,8 +104,8 @@ footer {
 }
 
 #nav-list a:hover {
-    background-color: rgb(98, 37, 177);
-    color: lightcoral;
+    background-color: rgb(255, 77, 77);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -103,12 +115,6 @@ footer {
     height: auto;
 }
 
-#title{
-    margin-top: 50px;
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-bottom: 0px;
-}
 
 #submit {
     width: 75px;
@@ -122,90 +128,9 @@ footer {
     font-weight: bold;
 }
 
-#description {
-    margin-top: 0px;
-    padding: 0px 0px 10px 0px;
-}
-
 #submit:active {
     background-color: rgb(19, 68, 0);
     color: white;
-}
-
-form {
-    max-width: 200px;
-    height: auto;
-    display: inline-block;
-}
-
-table {
-    border-collapse: collapse;
-    /* width: 100%; */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:10px;
-    width:600px;
-}
-
-th{
-    background-color: rgb(132, 140, 207) !important;
-    color: rgb(244, 240, 255);
-    font-weight: bold;
-}
-
-td,th {
-    border: 5px solid #3b4161;
-    text-align: left;
-    padding: 8px;
-    background-color: white;
-    
-}
-
-#pricing-page{
-    background-color: #3b4161;
-    color: white;
-    padding: 12px 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    border-radius: 4px;
-    max-width: 400px;
-    width: 50%;
-}
-
-#metal-price{
-    background-color: white;
-    color: rgb(23, 39, 7);
-    display: block;
-    border: ivory;
-}
-#metal-option{
-    font-family: 'Bauhaus Modern', sans-serif;
-    color: white;
-    background-color: rgb(94, 65, 149);
-}
-
-#metal-weight {
-    font-family: 'Bauhaus Modern', sans-serif;
-    background-color: rgb(214, 214, 214);
-    color: rgb(94, 65, 149);
-}
-#price-output{
-    border-style: solid;
-    border-width: 2px;
-    padding: 5px;
-}
-
-#price-submit{
-    color:white;
-    background-color: rgb(94, 65, 149);
-    border-radius: 5px;
-    margin-top: 5px;
-    padding: 1px 5px;
-    font-size: 16px;
-    font-family: 'Bauhaus Modern', sans-serif;
 }
 
 #price-submit:hover {
