@@ -9,43 +9,22 @@ html {
 ::selection { background: rgb(255, 187, 0); }
 
 body {
-    background-image: url('https://coolbackgrounds.io/images/backgrounds/white/white-triangle-369b8d2d.jpg');
-    background-repeat: repeat;
-    background-color:rgb(255, 250, 250);
+    background: url('https://i.ibb.co/2grr4Qy/image-from-rawpixel-id-2759062-jpeg-1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     color: rgb(29, 26, 26) !important;
     text-align: center;
     position: relative;
-    font-family: 'Chilanka', sans-serif; 
+    font-family: 'Chilanka', sans-serif;
+    margin: 0px; 
     
 }
 
-footer {
-
-}
 
 footer a {
     color: red;
-}
-
-@media screen and (min-width: 900px) {
-    body {
-        /* background-repeat: no-repeat; */
-        /* background-image: url("https://images.hdqwalls.com/wallpapers/white-cube-pattern-4k-bu.jpg"); */
-        /* background-color: rgb(245, 245, 245); */
-    }
-
-    .allButFooter {
-        padding-bottom: 2.5rem;  
-    }
-
-    footer{
-        position: relative;
-        bottom: 0;
-        width: 100%;
-        height: 2.5rem;     
-        padding-bottom: 5px;
-    }
-
 }
 
 #header-div {
@@ -63,12 +42,8 @@ footer a {
   padding-right: 1px;
   padding-top: 7px;
   padding-bottom: 7px;
-  box-shadow: 10px 5px 5px rgb(66, 66, 66);
+  box-shadow: 10px 5px 5px rgb(54, 1, 1);
   
-}
-
-h4 {
-    padding-left: 5px;
 }
 
 
@@ -121,7 +96,7 @@ h4 {
   .dropdown-content {
     background-color:rgb(236, 196, 177);
     border-radius: 5px;
-    box-shadow: 10px 10px 8px #505050;
+    box-shadow: 10px 10px 8px #280000;
     display: none;
     position: absolute;
     z-index: 1;
@@ -145,11 +120,42 @@ h4 {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+#welcome-section small {
+    margin-top: 0px;
+    color: red;
+}
+
+#welcome-section h1 {
+    margin-bottom: 0px;
+}  
   
-#mineral-image {
-    width: 60%;
-    max-width: 500px;
-    height: auto;
+
+#welcome-section {
+ /* margin-top: 50%; */
+ /* margin-bottom: 50%; */
+ /* background: linear-gradient(35deg, #310000, #f59d9d, white); */
+ /* display: block;
+ padding-top: 50%;
+ padding-bottom: 50%;
+ margin-left: 0;
+ margin-right: 0; */
+}
+
+.project-title {
+    background: linear-gradient(35deg, #310000, #f59d9d, white);
+    padding-top: 50%;
+    padding-bottom: 50%;
+    margin: 0px;
+    display: flex;
+    /* height: 100vh; */
+}
+
+.project-title > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    /* padding: 20px; */
+    font-size: 30px;
 }
 
 
@@ -162,6 +168,10 @@ h4 {
     margin-right: auto;
 }
 
+@media screen and (min-width: 900px) {
+
+
+}
 
 
 
