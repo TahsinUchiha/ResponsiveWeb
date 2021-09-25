@@ -143,7 +143,7 @@ footer a {
  color: rgb(255, 255, 255);
 }
 
-#projects {
+.projects {
 background-color: #bd4f6c;
 background-image: linear-gradient(326deg, #bd4f6c 0%, #d7816a 74%);   
 color: aliceblue;
@@ -152,7 +152,7 @@ padding-bottom: 10px;
 border-radius: 25px;
 }
 
-#projects h1 {
+.projects h1 {
     font-size: 45px;
 }
 
